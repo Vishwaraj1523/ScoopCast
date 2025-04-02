@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bevan:ital@0;1&family=Jersey+15&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+.info{
+    padding:3%;
+    margin:7% 20%;
+    border:1px solid white;
+    display: flex;
+    outline: none;
+    flex-wrap: wrap;
+}
+
+.info img{
+    min-width: 200px;
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+    margin-right:5%;
+    
+}
+.about{
+    padding:7% 3%;
+    color:white;
+    flex: 1;
+    min-width: 300px;
+}
+
+.genre {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    border: 1px solid #ff16b4;
+    border-radius: 20px;
+    background-color: #150526;
+    color: white;
+}
+
+.rating{
+    position: absolute;
+    padding:2% 0%;
+    direction:rtl;
+}
+
+.rating input[type="radio"]{
+    display: none;
+}
+
+.rating label{
+    font-size: 2em;
+    color:#ddd;
+    cursor:pointer;
+}
+
+.rating input[type="radio"]:checked ~ label{
+    color: gold;
+}
+
+.rating label:hover,.rating label:hover ~ label{
+    color:gold;
+}
+
+.info {
+    display: flex;
+    padding: 50px;
+    gap: 30px;
+    color: white;
+}
+
+.info img {
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.about {
+    flex: 1;
+}
+
+.about h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ff16b4;
+}
+
+.about p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.genre-ratings {
+    margin-top: 30px;
+}
+
+.genre-rating-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+.genre-rating-item label {
+    min-width: 100px;
+    color: #ff16b4;
+}
+
+.genre-rating-item select {
+    padding: 5px 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.genre-rating-item select:focus {
+    outline: none;
+    border-color: #ff16b4;
+}
+
+.genre-rating-item select option {
+    background: #292929;
+    color: white;
+}
+
+#final-grade {
+    font-size: 1.5em;
+    color: #ff16b4;
+    text-shadow: 0 0 10px rgba(255, 22, 180, 0.5);
+    margin-top: 20px;
+}
+
+.review-section {
+    margin-top: 30px;
+}
+
+#review-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+#review-form button {
+    transition: all 0.3s ease;
+}
+
+#review-form button:hover {
+    background: #e414a0;
+    box-shadow: 0 0 10px rgba(255, 22, 180, 0.5);
+}
+
+@media (max-width: 768px) {
+    .info {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .info img {
+        width: 100%;
+        height: auto;
+        max-height: 400px;
+    }
+
+    .genre-rating-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .genre-rating-item label {
+        margin-bottom: 5px;
+    }
+}

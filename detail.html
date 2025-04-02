@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>ScoopCast</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="info.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <nav>
+  <header>
+    <a href="index.html"><img class="scoop" src="pop/scoopluck.jpg" alt="ScoopCast" width="50px"></a>
+    <div class="logo"><a href="index.html" style="text-decoration:none;color:rgb(255, 255, 255);"><h1>ScoopCast</h1></a></div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="movies.html">Movies</a></li>
+      <li><a href="shows.html">Series</a></li>
+      <li><a href="diary.html">My Diary</a></li>
+    </ul>
+    <div class="search-box">
+      <form action="search.html" method="get">
+        <input type="text" name="query" id="srch" placeholder="Search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+  </header>
+  </nav>
+  <div class="info">
+    <img src="pop/placeholder.jpeg" alt="default">
+    <div class="about">
+        <h1 class="detail-title">title</h1><br>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores non necessitatibus assumenda suscipit recusandae accusamus illum illo, maxime corporis error neque nisi sequi, dele</p>
+        
+        <div class="genre-ratings">
+            <h3 style="color: white; margin-top: 20px;">Rate by Genre</h3>
+            <div id="genre-ratings-container">
+                <!-- Genre ratings will be populated here -->
+            </div>
+            <div class="final-rating">
+                <h3 id="final-grade" style="color: white; margin-top: 20px;">Final Grade: N/A</h3>
+            </div>
+        </div>
+
+        <div class="review-section">
+            <h3 style="color: white; margin-top: 20px;">Add to My Diary</h3>
+            <form id="review-form" style="margin-top: 10px;">
+                <textarea id="review-text" placeholder="Write your review here..." required 
+                    style="width: 100%; padding: 10px; margin-bottom: 10px; background: rgba(255,255,255,0.1); 
+                    border: 1px solid rgba(255,255,255,0.2); color: white; border-radius: 5px; min-height: 100px;"></textarea>
+                <button type="submit" style="padding: 8px 16px; background: #ff16b4; color: white; 
+                    border: none; border-radius: 5px; cursor: pointer;">Save to Diary</button>
+            </form>
+        </div>
+    </div>
+  </div>
+  
+  <div class="social">
+    <a href="https://www.instagram.com/scoopcastofficial?igsh=MWhhdWhhdGZlbnRyMA=="><i class="fab fa-instagram" style="padding-right:80px ;"></i></a>
+    <a href="https://www.youtube.com/@ScoopCast"><i class="fab fa-youtube"></i></a>
+  </div>
+</body>
+</html>

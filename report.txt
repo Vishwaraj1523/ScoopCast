@@ -1,0 +1,130 @@
+CSS (Cascading Style Sheets) - Styling the Webpage
+CSS is used to design and style the webpage. It controls layout, colors, spacing, and animations.
+
+1. box-sizing
+Defines how the width and height of an element are calculated.
+
+content-box (default): Width & height include only the content.
+border-box: Includes padding and border in the total width & height.
+2. z-index
+Controls which element appears on top when elements overlap.
+
+Higher z-index values mean elements are placed above lower values.
+3. display
+Determines how an element is shown on the page. Common values:
+
+block (default for <div>): Takes full width.
+inline (default for <span>): Stays in line with text.
+flex: Allows flexible layouts.
+4. flex
+Used with display: flex; to arrange elements in a row or column.
+
+It makes responsive designs easier.
+5. i
+Represents an icon or italic text in HTML. Often used for FontAwesome icons.
+
+6. cursor
+Changes the mouse pointer when hovering over an element.
+
+pointer: Changes to a hand symbol when clickable.
+7. border-radius
+Rounds the corners of an element.
+
+Example: border-radius: 10px; creates rounded corners.
+8. justify-content
+Aligns content horizontally inside a flex container.
+
+center, space-between, space-around, etc.
+9. position
+Controls how an element is positioned on the page.
+
+static (default), relative, absolute, fixed, sticky.
+10. box-shadow
+Adds shadow effects to elements.
+
+Example: box-shadow: 5px 5px 10px gray;
+11. text-decoration
+Modifies text appearance.
+
+Example: text-decoration: none; removes underlines from links.
+12. list-style
+Controls bullet points or numbers in lists (ul or ol).
+
+Example: list-style: none; removes bullets from lists.
+13. text-shadow
+Adds a shadow behind text.
+
+Example: text-shadow: 2px 2px 5px gray;
+14. outline
+Adds a border outside an element, but doesn’t affect layout.
+
+Example: outline: 2px solid red;
+15. object-fit
+Defines how an image fits inside its container.
+
+Example: object-fit: cover; makes an image fill its box without stretching.
+16. transform
+Modifies elements (rotate, scale, move).
+
+Example: transform: rotate(45deg); rotates an element.
+17. transition
+Adds smooth animation between states.
+
+Example: transition: all 0.5s ease-in-out;
+18. hover
+Applies styles when a user hovers over an element.
+
+Example: button:hover { background: blue; } changes color on hover.
+19. min-width
+Sets the minimum width an element can shrink to.
+
+20. flex-wrap
+Controls whether flex items wrap onto new lines if they don’t fit.
+
+wrap: Items move to a new row if needed.
+21. unicode-bidi & direction
+Used for text direction (left-to-right or right-to-left).
+
+22. :checked ~ label
+Selects the label when a checkbox or radio input is checked.
+
+23. :hover ~ label
+Applies styles when the user hovers over an adjacent label.
+
+24. rgba(r,g,b,alpha)
+Defines color with transparency.
+
+Example: rgba(255, 0, 0, 0.5); makes red 50% transparent.
+HTML (HyperText Markup Language) - Structure of the Webpage
+HTML is the language used to create webpage content.
+
+1. header
+Defines the top section of a webpage, usually contains a logo and navigation.
+
+2. nav
+Defines the navigation menu (like Home, Movies, Series links).
+
+3. form
+Creates a form where users can enter input (e.g., search bar).
+
+input: A field where users type information.
+radio: A button that users can select (one option at a time).
+4. class
+A way to apply CSS styles to multiple elements.
+
+Example: <div class="container"> can be styled using .container { } in CSS.
+5. i (FontAwesome icons)
+Used for adding icons, like:
+
+fab fa-instagram: Instagram icon
+fab fa-youtube: YouTube icon
+fa fa-search: Search icon
+fa fa-star: Star rating icon
+JavaScript (Adds Interactivity)
+JavaScript makes websites interactive (e.g., clicking buttons, searching).
+
+1. onclick
+Executes a function when an element is clicked.
+
+Example: <button onclick="alert('Hello!')">Click Me</button>
+Shows an alert message when clicked.

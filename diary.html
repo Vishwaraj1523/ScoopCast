@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>My Diary - ScoopCast</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <nav>
+  <header>
+    <a href="index.html"><img class="scoop" src="pop/scoopluck.jpg" alt="ScoopCast" width="50px"></a>
+    <div class="logo"><a href="index.html" style="text-decoration:none;color:rgb(255, 255, 255);"><h1>ScoopCast</h1></a></div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="movies.html">Movies</a></li>
+      <li><a href="shows.html">Series</a></li>
+      <li><a href="diary.html">My Diary</a></li>
+    </ul>
+    <div class="search-box">
+      <form action="search.html" method="get">
+        <input type="text" name="query" id="srch" placeholder="Search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+  </header>
+  </nav>
+
+  <div class="diary-container">
+    <h2 style="padding-top: 3%; color: white; padding-left: 5%;text-align: center;">My Reviews</h2>
+    <div style="padding-left: 5%; margin-bottom: 20px;text-align: center;">
+      <button id="reset-reviews" class="reset-button">Reset All Reviews</button>
+    </div>
+    <div id="reviews-container">
+      <!-- Reviews will be populated by JavaScript -->
+    </div>
+  </div>
+
+  <div class="social">
+    <a href="https://www.instagram.com/scoopcastofficial?igsh=MWhhdWhhdGZlbnRyMA=="><i class="fab fa-instagram" style="padding-right:80px ;"></i></a>
+    <a href="https://www.youtube.com/@ScoopCast"><i class="fab fa-youtube"></i></a>
+  </div>
+</body>
+</html> 
